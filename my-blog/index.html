@@ -17,21 +17,32 @@
     
     <div class="card">
       <h3>What's on your mind?</h3>
+      
       <form id="form" method="POST">
-        <label for="text-UN">Username: </label>
-        <input type="text" placeholder="Enter Username" name="text-UN" id="text-UN" />
-        <label for="text-PW">Password: </label>
-        <input type="text" placeholder="Enter Password" name="text-PW" id="text-PW" />
-        <label for="text-UN">Content: </label>
-        <input type="text" placeholder="Enter Content" name="text-CT" id="text-CT" />
-    </form>
-      <p>Post Count: <span id="post-count">0</span></p>
+        <div class = "input-field">
+          <label for="text-UN">Username: </label>
+          <input type="text" placeholder="Enter Username" name="text-UN" id="text-UN" />
+        </div>
+        <div class = "input-field">
+          <label for="text-PW">Password: </label>
+          <input type="text" placeholder="Enter Password" name="text-PW" id="text-PW" />
+        </div> 
+        <div class = "input-field">
+          <label for="text-UN">Content: </label>
+          <input type="text" placeholder="Enter Content" name="text-CT" id="text-CT" />
+        </div>
+        <button id="Sumbit">Submit</button>
+      </form>
+      
+      
 
     <footer>
         
     </footer>
-  </div>
+    </div>
+    
     <script src="./assets/js/script.js"></script>
+    <p>Post Count: <span id="post-count">0</span></p>
   </body>
 
 </html>
