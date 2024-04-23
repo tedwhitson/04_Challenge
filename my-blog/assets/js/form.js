@@ -1,6 +1,6 @@
-const usernameInput = document.querySelector('#text-UN');
-const passwordInput = document.querySelector('#text-PW');
-const contentInput = document.querySelector('#text-CT');
+const usernameInput = document.querySelector('#userName');
+const passwordInput = document.querySelector('#postTitle');
+const contentInput = document.querySelector('#postContent');
 const submitButton = document.querySelector('#Submit');
 
 submitButton.addEventListener('click', function (event) {
@@ -8,25 +8,13 @@ submitButton.addEventListener('click', function (event) {
 
   const postInfo = {
     username: usernameInput.value.trim(),
-     if (username === '') {
-        return;
-     }
-     
     password: passwordInput.value.trim(), 
-     if (password === '') {
-        return;
-     }
-
-    content: contentInput.value.trim(),
-     if (content === '') {
-        return;
-     }
-     
+    content: contentInput.value.trim()
   };
 
-  
 const jsonPost = JSON.stringify(postInfo);
-  localStorage.setItem('postInfo', jsonPost);
+  localStorage.setItem("postInfo", jsonPost);
 
+  window.location.href = '/my-blog/blog.html';
 
 });
