@@ -8,11 +8,24 @@ submitButton.addEventListener('click', function (event) {
 
   const postInfo = {
     username: usernameInput.value.trim(),
+     if (username === '') {
+        return;
+     }
+     
     password: passwordInput.value.trim(), 
+     if (password === '') {
+        return;
+     }
+
     content: contentInput.value.trim(),
+     if (content === '') {
+        return;
+     }
+     
   };
 
-const josnPost = JSON.stringify(postInfo);
+  
+const jsonPost = JSON.stringify(postInfo);
   localStorage.setItem('postInfo', jsonPost);
 
 
