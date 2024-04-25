@@ -3,10 +3,8 @@ const themeButtonEl = $('#theme-btn');
 
 
 
-// light theme state
 let isDark = true;
 
-// Click event causes alert light theme toggle
 themeButtonEl.on('click', function () {
   if (isDark) {
     $('body').css({ 'background-color': 'grey', color: 'black' });

@@ -1,11 +1,15 @@
-// const themeButtonEl = $('#theme-btn');
-// const refreshButtonEl = $('#refresh-btn');
-// const returnButtonEl = $('#return-btn');
+
+const backButton = document.querySelector('#Back');
+
+backButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    window.location.href = './index.html';
+});
+
+const jsonPost = readFromStorage();
+return(jsonPost.username,
+      jsonPost.posttile,
+      jsonPost.content
+);
 
 
-
-// const jsonPost = JSON.stringify(postInfo);
-//   localStorage.getItem("postInfo", jsonPost);
-
-const blogData = readFromStorage();
-console.log(blogData);
