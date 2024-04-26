@@ -17,8 +17,7 @@ themeButtonEl.on('click', function () {
 
 // Universal localStorage.getItem function
 
-function readFromStorage() {
-
-    const jsonPost = JSON.parse(localStorage.getItem("postInfo"));
-    return jsonPost;
-}
+//function readFromStorage() {
+//    const jsonPost = JSON.parse(localStorage.getItem("postInfo"));
+//    return jsonPost;
+//}
